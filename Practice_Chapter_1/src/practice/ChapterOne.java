@@ -35,6 +35,43 @@ public class ChapterOne {
 		
 		return false;
 	}
+	
+	
+	
+	
+	public static String URLify(String str){
+		str = str.replaceAll("\\s+","%20");
+		System.out.println(str);
+		return str;
+		
+	}
+	
+	
+	public static boolean palindromePermutation(String str) {
+		boolean check = false;
+		str = str.toLowerCase();
+		char arr[] = str.toCharArray();
+		Arrays.sort(arr);	
+		for(int i = 0; i<arr.length; i++) {
+			int count = 0;
+	
+			for(int j = 1; j<arr.length;j++) {
+				if(arr[i] != arr[j]) {
+					count++;
+				}
+	
+				}
+			//System.out.println("COUNT:"+count);
+			if (count % 2 == 0 || (count == 1)){
+				System.out.println("TRUE" +count);
+				check = true;
+				
+			}
+		}
+				
+		
+		return check;
+	}
 
 	
 }

@@ -19,9 +19,9 @@ public class Main extends ChapterOne{
 		//
 		
 		
-		System.out.println(ChapterOne.checkPermutation("abac", "aabc"));
-		
-	
+//		System.out.println(ChapterOne.checkPermutation("abac", "aabc"));
+		//ChapterOne.URLify("1 2 3 4 5      ");
+		System.out.println(ChapterOne.palindromePermutation("aba"));
 	}
 
 }
